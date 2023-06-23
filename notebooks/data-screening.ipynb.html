@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
     <meta charset="utf-8">
-    <meta name="generator" content="quarto-1.4.130">
+    <meta name="generator" content="quarto-1.4.163">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
     <meta name="description" content="Screening and filtering data from the IGN catalog down to the relevant events for La Palma">
 
-    <title>Data Screening</title>    <style>
+    <title>Data Screening</title>
+    <style>
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -54,10 +55,12 @@
       pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
       }
     </style>
+
     <style>
       body.hypothesis-enabled .quarto-embed-header {
         padding-right: 36px;
       }
+
       .quarto-embed-header {
         height: 3em;
         width: 100%;
@@ -66,6 +69,7 @@
         align-items: center;
         border-bottom: solid 1px;
       }
+
       .quarto-embed-header h6 {
         font-size: 1.1em;
         padding-top: 0.6em;
@@ -73,6 +77,7 @@
         margin-right: 1em;
         font-weight: 400;
       }
+
       .quarto-embed-header a.quarto-back-link,
       .quarto-embed-header a.quarto-download-embed {
         font-size: 0.8em;
@@ -81,11 +86,13 @@
         margin-left: 1em;
         margin-right: 1em;
       }
+
       .quarto-back-container {
         padding-left: 0.5em;
         display: flex;
       }
     </style>
+
     
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -105,27 +112,18 @@
 </script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>  
-      <meta name="citation_title" content="Data Screening">
-<meta name="citation_language" content="en">
-</head>
-  <body class="quarto-notebook">
+      </head>
+
+  <body class="quarto-notebook fullcontent">
     <div class="quarto-embed-header">
       <a href="../index.html" class="btn btn-outline-secondary quarto-back-link"><i class="bi bi-caret-left"></i> Back to Article</a>
       <h6><i class="bi bi-journal-code"></i> Data Screening</h6>
-      <a href="data-screening.out.ipynb" class="btn btn-primary quarto-download-embed" data-noresolveinput="true" download="data-screening.ipynb">Download Notebook</a>
-    </div>
+
+            <a href="data-screening.ipynb" class="btn btn-primary quarto-download-embed" data-noresolveinput="true" download="data-screening.ipynb">Download Notebook</a>
+          </div>
+
      <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-  <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#filter-down-to-la-palma-events-only" id="toc-filter-down-to-la-palma-events-only" class="nav-link active" data-scroll-target="#filter-down-to-la-palma-events-only">Filter down to La Palma events only</a></li>
-  <li><a href="#spatial-plot" id="toc-spatial-plot" class="nav-link" data-scroll-target="#spatial-plot">Spatial Plot</a></li>
-  <li><a href="#timeline-plot" id="toc-timeline-plot" class="nav-link" data-scroll-target="#timeline-plot">Timeline Plot</a></li>
-  </ul>
-</nav>
-</div>
+
 <main class="content page-columns page-full" id="quarto-document-content">      <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Data Screening</h1>
@@ -152,7 +150,7 @@
   </div>
   
 
-</header>     <div id="0cd64b4c-6f90-4ce2-85c9-049058762f85" class="cell markdown">
+</header>   <div id="0cd64b4c-6f90-4ce2-85c9-049058762f85" class="cell markdown">
 
 </div>
 <div id="96cd123b-e010-4778-9afa-9ca125ef50cc" class="cell markdown">
@@ -720,7 +718,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
           const parser = new DOMParser();
           const htmlDoc = parser.parseFromString(html, "text/html");
           const note = htmlDoc.getElementById(id);
-          console.log(htmlDoc.body.innerHTML);
           if (note !== null) {
             const html = processXRef(id, note);
             instance.setContent(html);
@@ -860,5 +857,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>  </div> <!-- /content --> 
   
-
 </body></html>

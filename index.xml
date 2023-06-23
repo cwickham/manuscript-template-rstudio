@@ -70,10 +70,10 @@ administration</role>
 <corresp id="cor-1">steve@curvenote.com</corresp>
 </author-notes>
 
-<pub-date date-type="pub" publication-format="electronic" iso-8601-date="2023-06-08">
+<pub-date date-type="pub" publication-format="electronic" iso-8601-date="2023-06-23">
 <year>2023</year>
 <month>6</month>
-<day>8</day>
+<day>23</day>
 </pub-date>
 
 
@@ -107,13 +107,45 @@ Nacional (IGN). …</p>
 <body>
 <sec id="introduction">
   <title>1 Introduction</title>
-  <fig id="fig-map">
-    <caption><p>Figure 1: Map of La Palma</p></caption>
-    <graphic mimetype="image" mime-subtype="png" xlink:href="images/la-palma-map.png" />
+  <fig id="fig-timeline">
+    <caption><p>Figure 1: Timeline of recent earthquakes on La
+    Palma</p></caption>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-timeline-1.png" />
   </fig>
-  <p>La Palma is one of the west most islands in the Volcanic
-  Archipelago of the Canary Islands
-  (<xref alt="Figure 1" rid="fig-map">Figure 1</xref>).</p>
+  <p>Based on data up to and including 1971, eruptions on La Palma
+  happen every 79.8 years on average.</p>
+  <p>Studies of the magma systems feeding the volcano, such as Marrero
+  et al.
+  (<xref alt="2019" rid="ref-marrero2019" ref-type="bibr">2019</xref>),
+  have proposed that there are two main magma reservoirs feeding the
+  Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges
+  and in turn feeds a shallower crustal reservoir (10-20km depth).</p>
+  <p>Eight eruptions have been recorded since the late 1400s
+  (<xref alt="Figure 1" rid="fig-timeline">Figure 1</xref>).</p>
+  <p>Data and methods are discussed in
+  <xref alt="Section 2" rid="sec-data-methods">Section 2</xref>.</p>
+  <p>Let <inline-formula><alternatives>
+  <tex-math><![CDATA[x]]></tex-math>
+  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>x</mml:mi></mml:math></alternatives></inline-formula>
+  denote the number of eruptions in a year. Then
+  <inline-formula><alternatives>
+  <tex-math><![CDATA[x]]></tex-math>
+  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>x</mml:mi></mml:math></alternatives></inline-formula>
+  can be modeled by a Poisson distribution:</p>
+  <p><styled-content id="eq-poisson"><disp-formula><alternatives>
+  <tex-math><![CDATA[
+  p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
+   \qquad(1)]]></tex-math>
+  <mml:math display="block" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>p</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mi>x</mml:mi><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msup><mml:mi>e</mml:mi><mml:mrow><mml:mo>−</mml:mo><mml:mi>λ</mml:mi></mml:mrow></mml:msup><mml:msup><mml:mi>λ</mml:mi><mml:mi>x</mml:mi></mml:msup></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>!</mml:mi></mml:mrow></mml:mfrac><mml:mspace width="2.0em"></mml:mspace><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></disp-formula></styled-content></p>
+  <p>Where <inline-formula><alternatives>
+  <tex-math><![CDATA[\lambda]]></tex-math>
+  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>λ</mml:mi></mml:math></alternatives></inline-formula>
+  is the rate of eruptions per year. Using
+  <xref alt="Equation 1" rid="eq-poisson">Equation 1</xref>, the
+  probability of an eruption in the next <inline-formula><alternatives>
+  <tex-math><![CDATA[t]]></tex-math>
+  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>t</mml:mi></mml:math></alternatives></inline-formula>
+  years can be calculated.</p>
   <table-wrap>
     <caption>
       <p>Table 1: Recent historic eruptions on La Palma</p>
@@ -164,53 +196,13 @@ Nacional (IGN). …</p>
   <p><xref alt="Table 1" rid="tbl-history">Table 1</xref> summarises the
   eruptions recorded since the colonization of the islands by Europeans
   in the late 1400s.</p>
-  <p>Data and methods are discussed in
-  <xref alt="Section 2" rid="sec-data-methods">Section 2</xref>.</p>
-  <p>Let <inline-formula><alternatives>
-  <tex-math><![CDATA[x]]></tex-math>
-  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>x</mml:mi></mml:math></alternatives></inline-formula>
-  denote the number of eruptions in a year. Then
-  <inline-formula><alternatives>
-  <tex-math><![CDATA[x]]></tex-math>
-  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>x</mml:mi></mml:math></alternatives></inline-formula>
-  can be modeled by a Poisson distribution:</p>
-  <p><styled-content id="eq-poisson"><disp-formula><alternatives>
-  <tex-math><![CDATA[
-  p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
-   \qquad(1)]]></tex-math>
-  <mml:math display="block" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>p</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mi>x</mml:mi><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msup><mml:mi>e</mml:mi><mml:mrow><mml:mo>−</mml:mo><mml:mi>λ</mml:mi></mml:mrow></mml:msup><mml:msup><mml:mi>λ</mml:mi><mml:mi>x</mml:mi></mml:msup></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>!</mml:mi></mml:mrow></mml:mfrac><mml:mspace width="2.0em"></mml:mspace><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></disp-formula></styled-content></p>
-  <p>Where <inline-formula><alternatives>
-  <tex-math><![CDATA[\lambda]]></tex-math>
-  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>λ</mml:mi></mml:math></alternatives></inline-formula>
-  is the rate of eruptions per year. Using
-  <xref alt="Equation 1" rid="eq-poisson">Equation 1</xref>, the
-  probability of an eruption in the next <inline-formula><alternatives>
-  <tex-math><![CDATA[t]]></tex-math>
-  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>t</mml:mi></mml:math></alternatives></inline-formula>
-  years can be calculated.</p>
-  <fig id="fig-timeline">
-    <caption><p>Figure 2: Timeline of recent earthquakes on La
-    Palma</p></caption>
-    <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-timeline-1.png" />
+  <fig id="fig-map">
+    <caption><p>Figure 2: Map of La Palma</p></caption>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="images/la-palma-map.png" />
   </fig>
-  <p>Based on the eruptions up to and including 1971, we would estimate
-  <inline-formula><alternatives>
-  <tex-math><![CDATA[\lambda]]></tex-math>
-  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>λ</mml:mi></mml:math></alternatives></inline-formula>
-  to be <inline-formula><alternatives>
-  <tex-math><![CDATA[\frac{1}{79.8}]]></tex-math>
-  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mfrac><mml:mn>1</mml:mn><mml:mn>79.8</mml:mn></mml:mfrac></mml:math></alternatives></inline-formula>.</p>
-  <p>Studies of the magma systems feeding the volcano, such as Marrero
-  et al.
-  (<xref alt="2019" rid="ref-marrero2019" ref-type="bibr">2019</xref>),
-  have proposed that there are two main magma reservoirs feeding the
-  Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges
-  and in turn feeds a shallower crustal reservoir (10-20km depth).</p>
-  <p>A prior study of the magma systems feeding the volcano proposed
-  that there are two main magma reservoirs feeding the Cumbre Vieja
-  volcano
-  (<xref alt="Marrero et al. 2019" rid="ref-marrero2019" ref-type="bibr">Marrero
-  et al. 2019</xref>).</p>
+  <p>La Palma is one of the west most islands in the Volcanic
+  Archipelago of the Canary Islands
+  (<xref alt="Figure 2" rid="fig-map">Figure 2</xref>).</p>
   <fig id="fig-spatial-plot">
     <caption><p>Figure 3: Locations of earthquakes on La Palma since
     2017.</p></caption>
@@ -314,13 +306,63 @@ Nacional (IGN). …</p>
 <body>
 <sec id="introduction-nb-article">
   <title>1 Introduction</title>
-  <fig id="fig-map-nb-article">
-    <caption><p>Figure 1: Map of La Palma</p></caption>
-    <graphic mimetype="image" mime-subtype="png" xlink:href="images/la-palma-map.png" />
+  <sec id="-nb-article" specific-use="notebook-code">
+  <code language="r script">eruptions &lt;- c(1492, 1585, 1646, 1677, 1712, 1949, 1971, 2021)
+n_eruptions &lt;- length(eruptions)</code>
+  </sec>
+  <sec id="-nb-article" specific-use="notebook-code">
+  <code language="r script">par(mar = c(3, 1, 1, 1) + 0.1)
+plot(eruptions, rep(0, n_eruptions), 
+  pch = &quot;|&quot;, axes = FALSE, xlab = &quot;&quot;, ylab = &quot;&quot;)
+axis(1)
+box()</code>
+  <fig id="fig-timeline-nb-article">
+    <caption><p>Figure 1: Timeline of recent earthquakes on La
+    Palma</p></caption>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-timeline-1.png" />
   </fig>
-  <p>La Palma is one of the west most islands in the Volcanic
-  Archipelago of the Canary Islands
-  (<xref alt="Figure 1" rid="fig-map-nb-article">Figure 1</xref>).</p>
+  </sec>
+  <sec id="-nb-article" specific-use="notebook-code">
+  <code language="r script">avg_years_between_eruptions &lt;- mean(diff(eruptions[-n_eruptions]))
+avg_years_between_eruptions</code>
+  <sec id="-output-0-nb-article" specific-use="notebook-output">
+  <preformat>[1] 79.83333</preformat>
+  </sec>
+  </sec>
+  <p>Based on data up to and including 1971, eruptions on La Palma
+  happen every 79.8 years on average.</p>
+  <p>Studies of the magma systems feeding the volcano, such as Marrero
+  et al.
+  (<xref alt="2019" rid="ref-marrero2019-nb-article" ref-type="bibr">2019</xref>),
+  have proposed that there are two main magma reservoirs feeding the
+  Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges
+  and in turn feeds a shallower crustal reservoir (10-20km depth).</p>
+  <p>Eight eruptions have been recorded since the late 1400s
+  (<xref alt="Figure 1" rid="fig-timeline-nb-article">Figure 1</xref>).</p>
+  <p>Data and methods are discussed in
+  <xref alt="Section 2" rid="sec-data-methods-nb-article">Section 2</xref>.</p>
+  <p>Let <inline-formula><alternatives>
+  <tex-math><![CDATA[x]]></tex-math>
+  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>x</mml:mi></mml:math></alternatives></inline-formula>
+  denote the number of eruptions in a year. Then
+  <inline-formula><alternatives>
+  <tex-math><![CDATA[x]]></tex-math>
+  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>x</mml:mi></mml:math></alternatives></inline-formula>
+  can be modeled by a Poisson distribution:</p>
+  <p><styled-content id="eq-poisson-nb-article"><disp-formula><alternatives>
+  <tex-math><![CDATA[
+  p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
+   \qquad(1)]]></tex-math>
+  <mml:math display="block" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>p</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mi>x</mml:mi><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msup><mml:mi>e</mml:mi><mml:mrow><mml:mo>−</mml:mo><mml:mi>λ</mml:mi></mml:mrow></mml:msup><mml:msup><mml:mi>λ</mml:mi><mml:mi>x</mml:mi></mml:msup></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>!</mml:mi></mml:mrow></mml:mfrac><mml:mspace width="2.0em"></mml:mspace><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></disp-formula></styled-content></p>
+  <p>Where <inline-formula><alternatives>
+  <tex-math><![CDATA[\lambda]]></tex-math>
+  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>λ</mml:mi></mml:math></alternatives></inline-formula>
+  is the rate of eruptions per year. Using
+  <xref alt="Equation 1" rid="eq-poisson-nb-article">Equation 1</xref>, the
+  probability of an eruption in the next <inline-formula><alternatives>
+  <tex-math><![CDATA[t]]></tex-math>
+  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>t</mml:mi></mml:math></alternatives></inline-formula>
+  years can be calculated.</p>
   <table-wrap>
     <caption>
       <p>Table 1: Recent historic eruptions on La Palma</p>
@@ -371,71 +413,13 @@ Nacional (IGN). …</p>
   <p><xref alt="Table 1" rid="tbl-history-nb-article">Table 1</xref> summarises the
   eruptions recorded since the colonization of the islands by Europeans
   in the late 1400s.</p>
-  <p>Data and methods are discussed in
-  <xref alt="Section 2" rid="sec-data-methods-nb-article">Section 2</xref>.</p>
-  <p>Let <inline-formula><alternatives>
-  <tex-math><![CDATA[x]]></tex-math>
-  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>x</mml:mi></mml:math></alternatives></inline-formula>
-  denote the number of eruptions in a year. Then
-  <inline-formula><alternatives>
-  <tex-math><![CDATA[x]]></tex-math>
-  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>x</mml:mi></mml:math></alternatives></inline-formula>
-  can be modeled by a Poisson distribution:</p>
-  <p><styled-content id="eq-poisson-nb-article"><disp-formula><alternatives>
-  <tex-math><![CDATA[
-  p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
-   \qquad(1)]]></tex-math>
-  <mml:math display="block" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>p</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mi>x</mml:mi><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msup><mml:mi>e</mml:mi><mml:mrow><mml:mo>−</mml:mo><mml:mi>λ</mml:mi></mml:mrow></mml:msup><mml:msup><mml:mi>λ</mml:mi><mml:mi>x</mml:mi></mml:msup></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>!</mml:mi></mml:mrow></mml:mfrac><mml:mspace width="2.0em"></mml:mspace><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></disp-formula></styled-content></p>
-  <p>Where <inline-formula><alternatives>
-  <tex-math><![CDATA[\lambda]]></tex-math>
-  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>λ</mml:mi></mml:math></alternatives></inline-formula>
-  is the rate of eruptions per year. Using
-  <xref alt="Equation 1" rid="eq-poisson-nb-article">Equation 1</xref>, the
-  probability of an eruption in the next <inline-formula><alternatives>
-  <tex-math><![CDATA[t]]></tex-math>
-  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>t</mml:mi></mml:math></alternatives></inline-formula>
-  years can be calculated.</p>
-  <sec id="-nb-article" specific-use="notebook-code">
-  <code language="r script">eruptions &lt;- c(1492, 1585, 1646, 1677, 1712, 1949, 1971, 2021)
-n_eruptions &lt;- length(eruptions)</code>
-  </sec>
-  <sec id="-nb-article" specific-use="notebook-code">
-  <code language="r script">par(mar = c(3, 1, 1, 1) + 0.1)
-plot(eruptions, rep(0, n_eruptions), 
-  pch = &quot;|&quot;, axes = FALSE, xlab = &quot;&quot;, ylab = &quot;&quot;)
-axis(1)
-box()</code>
-  <fig id="fig-timeline-nb-article">
-    <caption><p>Figure 2: Timeline of recent earthquakes on La
-    Palma</p></caption>
-    <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-timeline-1.png" />
+  <fig id="fig-map-nb-article">
+    <caption><p>Figure 2: Map of La Palma</p></caption>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="images/la-palma-map.png" />
   </fig>
-  </sec>
-  <sec id="-nb-article" specific-use="notebook-code">
-  <code language="r script">avg_years_between_eruptions &lt;- mean(diff(eruptions[-n_eruptions]))
-avg_years_between_eruptions</code>
-  <sec id="-output-0-nb-article" specific-use="notebook-output">
-  <preformat>[1] 79.83333</preformat>
-  </sec>
-  </sec>
-  <p>Based on the eruptions up to and including 1971, we would estimate
-  <inline-formula><alternatives>
-  <tex-math><![CDATA[\lambda]]></tex-math>
-  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>λ</mml:mi></mml:math></alternatives></inline-formula>
-  to be <inline-formula><alternatives>
-  <tex-math><![CDATA[\frac{1}{79.8}]]></tex-math>
-  <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mfrac><mml:mn>1</mml:mn><mml:mn>79.8</mml:mn></mml:mfrac></mml:math></alternatives></inline-formula>.</p>
-  <p>Studies of the magma systems feeding the volcano, such as Marrero
-  et al.
-  (<xref alt="2019" rid="ref-marrero2019-nb-article" ref-type="bibr">2019</xref>),
-  have proposed that there are two main magma reservoirs feeding the
-  Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges
-  and in turn feeds a shallower crustal reservoir (10-20km depth).</p>
-  <p>A prior study of the magma systems feeding the volcano proposed
-  that there are two main magma reservoirs feeding the Cumbre Vieja
-  volcano
-  (<xref alt="Marrero et al. 2019" rid="ref-marrero2019-nb-article" ref-type="bibr">Marrero
-  et al. 2019</xref>).</p>
+  <p>La Palma is one of the west most islands in the Volcanic
+  Archipelago of the Canary Islands
+  (<xref alt="Figure 2" rid="fig-map-nb-article">Figure 2</xref>).</p>
   <sec id="cell-fig-spatial-plot-nb-article" specific-use="notebook-code">
   <code language="python">from matplotlib import colormaps
 cmap = colormaps['viridis_r']
@@ -473,23 +457,12 @@ plt.show()</code>
 <back>
 <ref-list>
   <ref id="ref-marrero2019-nb-article">
-    <element-citation publication-type="article-journal">
-      <person-group person-group-type="author">
-        <name><surname>Marrero</surname><given-names>José</given-names></name>
-        <name><surname>García</surname><given-names>Alicia</given-names></name>
-        <name><surname>Berrocoso</surname><given-names>Manuel</given-names></name>
-        <name><surname>Llinares</surname><given-names>Ángeles</given-names></name>
-        <name><surname>Rodríguez-Losada</surname><given-names>Antonio</given-names></name>
-        <name><surname>Ortiz</surname><given-names>R.</given-names></name>
-      </person-group>
-      <article-title>Strategies for the development of volcanic hazard maps in monogenetic volcanic fields: The example of La Palma (Canary Islands)</article-title>
-      <source>Journal of Applied Volcanology</source>
-      <year iso-8601-date="2019-07">2019</year><month>07</month>
-      <volume>8</volume>
-      <pub-id pub-id-type="doi">10.1186/s13617-019-0085-5</pub-id>
-      <fpage></fpage>
-      <lpage></lpage>
-    </element-citation>
+    <mixed-citation>Marrero, José, Alicia García, Manuel Berrocoso,
+    Ángeles Llinares, Antonio Rodríguez-Losada, and R. Ortiz. 2019.
+    “Strategies for the Development of Volcanic Hazard Maps in
+    Monogenetic Volcanic Fields: The Example of La Palma (Canary
+    Islands).” <italic>Journal of Applied Volcanology</italic> 8 (July).
+    <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1186/s13617-019-0085-5">https://doi.org/10.1186/s13617-019-0085-5</ext-link>.</mixed-citation>
   </ref>
 </ref-list>
 </back>

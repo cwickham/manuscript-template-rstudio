@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
     <meta charset="utf-8">
-    <meta name="generator" content="quarto-1.4.130">
+    <meta name="generator" content="quarto-1.4.163">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
     <meta name="author" content="Steve Purves">
     <meta name="author" content="Rowan Cockett">
-    <meta name="dcterms.date" content="2023-06-08">
+    <meta name="dcterms.date" content="2023-06-23">
     <meta name="keywords" content="La Palma, Earthquakes">
 
-    <title>La Palma Earthquakes</title>    <style>
+    <title>La Palma Earthquakes</title>
+    <style>
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -76,10 +77,12 @@
       div.csl-indent {
         margin-left: 2em;
       }    </style>
+
     <style>
       body.hypothesis-enabled .quarto-embed-header {
         padding-right: 36px;
       }
+
       .quarto-embed-header {
         height: 3em;
         width: 100%;
@@ -88,6 +91,7 @@
         align-items: center;
         border-bottom: solid 1px;
       }
+
       .quarto-embed-header h6 {
         font-size: 1.1em;
         padding-top: 0.6em;
@@ -95,6 +99,7 @@
         margin-right: 1em;
         font-weight: 400;
       }
+
       .quarto-embed-header a.quarto-back-link,
       .quarto-embed-header a.quarto-download-embed {
         font-size: 0.8em;
@@ -103,11 +108,13 @@
         margin-left: 1em;
         margin-right: 1em;
       }
+
       .quarto-back-container {
         padding-left: 0.5em;
         display: flex;
       }
     </style>
+
     
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -133,33 +140,25 @@
 <meta name="citation_keywords" content="La Palma,Earthquakes">
 <meta name="citation_author" content="Steve Purves">
 <meta name="citation_author" content="Rowan Cockett">
-<meta name="citation_publication_date" content="2023-06-08">
-<meta name="citation_cover_date" content="2023-06-08">
+<meta name="citation_publication_date" content="2023-06-23">
+<meta name="citation_cover_date" content="2023-06-23">
 <meta name="citation_year" content="2023">
-<meta name="citation_online_date" content="2023-06-08">
+<meta name="citation_online_date" content="2023-06-23">
 <meta name="citation_language" content="en">
 <meta name="citation_journal_title" content="Earth and Space Science">
 <meta name="citation_reference" content="citation_title=Strategies for the development of volcanic hazard maps in monogenetic volcanic fields: The example of La Palma (Canary Islands);,citation_author=José Marrero;,citation_author=Alicia García;,citation_author=Manuel Berrocoso;,citation_author=Ángeles Llinares;,citation_author=Antonio Rodríguez-Losada;,citation_author=R. Ortiz;,citation_publication_date=2019-07;,citation_cover_date=2019-07;,citation_year=2019;,citation_doi=10.1186/s13617-019-0085-5;,citation_volume=8;,citation_journal_title=Journal of Applied Volcanology;">
 </head>
-  <body class="quarto-notebook">
+
+  <body class="quarto-notebook fullcontent">
     <div class="quarto-embed-header">
       <a href="index.html" class="btn btn-outline-secondary quarto-back-link"><i class="bi bi-caret-left"></i> Back to Article</a>
       <h6><i class="bi bi-journal-code"></i> Article Notebook</h6>
-      <a href="index.out.ipynb" class="btn btn-primary quarto-download-embed" data-noresolveinput="true" download="index.qmd.ipynb">Download Notebook</a>
-    </div>
+
+            <a href="index.qmd" class="btn btn-primary quarto-download-embed" data-noresolveinput="true" download="index.qmd">Download Notebook</a>
+          </div>
+
      <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-  <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
-  <li><a href="#sec-data-methods" id="toc-sec-data-methods" class="nav-link" data-scroll-target="#sec-data-methods"><span class="header-section-number">2</span> Data &amp; Methods</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">3</span> Conclusion</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  </ul>
-<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://github.com/cwickham/manuscript-template-rstudio/"><i class="bi bi-github"></i>GitHub Repo</a></li></ul></div></nav>
-</div>
+
 <main class="content page-columns page-full" id="quarto-document-content">      <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">La Palma Earthquakes</h1>
@@ -194,7 +193,7 @@
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 8, 2023</p>
+      <p class="date">June 23, 2023</p>
     </div>
   </div>
   
@@ -208,15 +207,43 @@
   </div>
 </div>
 
-</header>     <section id="introduction" class="level2 page-columns page-full" data-number="1">
+</header>   <section id="introduction" class="level2 page-columns page-full" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1</span> Introduction</h2>
-<div id="fig-map" class="quarto-figure quarto-figure-center anchored">
+<div class="cell" data-warning.hidden="true" data-message.hidden="true">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>eruptions <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1492</span>, <span class="dv">1585</span>, <span class="dv">1646</span>, <span class="dv">1677</span>, <span class="dv">1712</span>, <span class="dv">1949</span>, <span class="dv">1971</span>, <span class="dv">2021</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>n_eruptions <span class="ot">&lt;-</span> <span class="fu">length</span>(eruptions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-warning.hidden="true" data-message.hidden="true">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>) <span class="sc">+</span> <span class="fl">0.1</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(eruptions, <span class="fu">rep</span>(<span class="dv">0</span>, n_eruptions), </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">pch =</span> <span class="st">"|"</span>, <span class="at">axes =</span> <span class="cn">FALSE</span>, <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">axis</span>(<span class="dv">1</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">box</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-timeline" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/la-palma-map.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: Map of La Palma</figcaption>
+<p><img src="index_files/figure-html/fig-timeline-1.png" class="img-fluid figure-img" alt="An event plot of the years of the last 8 eruptions on La Palma." width="576"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: Timeline of recent earthquakes on La Palma</figcaption>
 </figure>
 </div>
-<p>La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands (<a href="#fig-map" class="quarto-xref">Figure&nbsp;1</a>).</p>
+</div>
+</div>
+<div class="cell" data-warning.hidden="true" data-message.hidden="true">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>avg_years_between_eruptions <span class="ot">&lt;-</span> <span class="fu">mean</span>(<span class="fu">diff</span>(eruptions[<span class="sc">-</span>n_eruptions]))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>avg_years_between_eruptions</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 79.83333</code></pre>
+</div>
+</div>
+<p>Based on data up to and including 1971, eruptions on La Palma happen every 79.8 years on average.</p>
+<p>Studies of the magma systems feeding the volcano, such as <span class="citation" data-cites="marrero2019">Marrero et al. (<a href="#ref-marrero2019" role="doc-biblioref">2019</a>)</span>, have proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).</p>
+<p>Eight eruptions have been recorded since the late 1400s (<a href="#fig-timeline" class="quarto-xref">Figure&nbsp;1</a>).</p>
+<p>Data and methods are discussed in <a href="#sec-data-methods" class="quarto-xref">Section&nbsp;2</a>.</p>
+<p>Let <span class="math inline">\(x\)</span> denote the number of eruptions in a year. Then <span class="math inline">\(x\)</span> can be modeled by a Poisson distribution:</p>
+<p><span id="eq-poisson"><span class="math display">\[
+p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
+\tag{1}\]</span></span></p>
+<p>Where <span class="math inline">\(\lambda\)</span> is the rate of eruptions per year. Using <a href="#eq-poisson" class="quarto-xref">Equation&nbsp;1</a>, the probability of an eruption in the next <span class="math inline">\(t\)</span> years can be calculated.</p>
 <div id="tbl-history" class="anchored">
 <table class="table">
 <caption>Table&nbsp;1: Recent historic eruptions on La Palma</caption>
@@ -263,41 +290,13 @@
 </table>
 </div>
 <p><a href="#tbl-history" class="quarto-xref">Table&nbsp;1</a> summarises the eruptions recorded since the colonization of the islands by Europeans in the late 1400s.</p>
-<p>Data and methods are discussed in <a href="#sec-data-methods" class="quarto-xref">Section&nbsp;2</a>.</p>
-<p>Let <span class="math inline">\(x\)</span> denote the number of eruptions in a year. Then <span class="math inline">\(x\)</span> can be modeled by a Poisson distribution:</p>
-<p><span id="eq-poisson"><span class="math display">\[
-p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
-\tag{1}\]</span></span></p>
-<p>Where <span class="math inline">\(\lambda\)</span> is the rate of eruptions per year. Using <a href="#eq-poisson" class="quarto-xref">Equation&nbsp;1</a>, the probability of an eruption in the next <span class="math inline">\(t\)</span> years can be calculated.</p>
-<div class="cell" data-warning.hidden="true" data-message.hidden="true">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>eruptions <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1492</span>, <span class="dv">1585</span>, <span class="dv">1646</span>, <span class="dv">1677</span>, <span class="dv">1712</span>, <span class="dv">1949</span>, <span class="dv">1971</span>, <span class="dv">2021</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>n_eruptions <span class="ot">&lt;-</span> <span class="fu">length</span>(eruptions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell" data-warning.hidden="true" data-message.hidden="true">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>) <span class="sc">+</span> <span class="fl">0.1</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(eruptions, <span class="fu">rep</span>(<span class="dv">0</span>, n_eruptions), </span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">pch =</span> <span class="st">"|"</span>, <span class="at">axes =</span> <span class="cn">FALSE</span>, <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">axis</span>(<span class="dv">1</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">box</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div id="fig-timeline" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-map" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="index_files/figure-html/fig-timeline-1.png" class="img-fluid figure-img" alt="An event plot of the years of the last 8 eruptions on La Palma." width="576"></p>
-<figcaption class="figure-caption">Figure&nbsp;2: Timeline of recent earthquakes on La Palma</figcaption>
+<p><img src="images/la-palma-map.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;2: Map of La Palma</figcaption>
 </figure>
 </div>
-</div>
-</div>
-<div class="cell" data-warning.hidden="true" data-message.hidden="true">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>avg_years_between_eruptions <span class="ot">&lt;-</span> <span class="fu">mean</span>(<span class="fu">diff</span>(eruptions[<span class="sc">-</span>n_eruptions]))</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>avg_years_between_eruptions</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 79.83333</code></pre>
-</div>
-</div>
-<p>Based on the eruptions up to and including 1971, we would estimate <span class="math inline">\(\lambda\)</span> to be <span class="math inline">\(\frac{1}{79.8}\)</span>.</p>
-<p>Studies of the magma systems feeding the volcano, such as <span class="citation" data-cites="marrero2019">Marrero et al. (<a href="#ref-marrero2019" role="doc-biblioref">2019</a>)</span>, have proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).</p>
-<p>A prior study of the magma systems feeding the volcano proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano <span class="citation" data-cites="marrero2019">(<a href="#ref-marrero2019" role="doc-biblioref">Marrero et al. 2019</a>)</span>.</p>
+<p>La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands (<a href="#fig-map" class="quarto-xref">Figure&nbsp;2</a>).</p>
 <div class="quarto-embed-nb-cell page-columns page-full" data-notebook="notebooks/data-screening.ipynb" data-notebook-title="Data Screening" data-notebook-cellid="cell-fig-spatial-plot">
 <div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [14]:</pre></div><div id="cell-fig-spatial-plot" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> colormaps</span>
@@ -494,7 +493,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
           const parser = new DOMParser();
           const htmlDoc = parser.parseFromString(html, "text/html");
           const note = htmlDoc.getElementById(id);
-          console.log(htmlDoc.body.innerHTML);
           if (note !== null) {
             const html = processXRef(id, note);
             instance.setContent(html);
@@ -634,5 +632,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>  </div> <!-- /content --> 
   
-
 </body></html>
