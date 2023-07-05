@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.176">
+<meta name="generator" content="quarto-1.4.185">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Steve Purves">
 <meta name="author" content="Rowan Cockett">
-<meta name="dcterms.date" content="2023-06-27">
+<meta name="dcterms.date" content="2023-07-05">
 <meta name="keywords" content="La Palma, Earthquakes">
 
 <title>La Palma Earthquakes</title>
@@ -62,9 +62,6 @@ div.csl-indent {
     document.body.classList.add('hypothesis-enabled');
   });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -75,10 +72,10 @@ div.csl-indent {
 <meta name="citation_keywords" content="La Palma,Earthquakes">
 <meta name="citation_author" content="Steve Purves">
 <meta name="citation_author" content="Rowan Cockett">
-<meta name="citation_publication_date" content="2023-06-27">
-<meta name="citation_cover_date" content="2023-06-27">
+<meta name="citation_publication_date" content="2023-07-05">
+<meta name="citation_cover_date" content="2023-07-05">
 <meta name="citation_year" content="2023">
-<meta name="citation_online_date" content="2023-06-27">
+<meta name="citation_online_date" content="2023-07-05">
 <meta name="citation_language" content="en">
 <meta name="citation_journal_title" content="Earth and Space Science">
 <meta name="citation_reference" content="citation_title=Strategies for the development of volcanic hazard maps in monogenetic volcanic fields: The example of La Palma (Canary Islands);,citation_author=José Marrero;,citation_author=Alicia García;,citation_author=Manuel Berrocoso;,citation_author=Ángeles Llinares;,citation_author=Antonio Rodríguez-Losada;,citation_author=R. Ortiz;,citation_publication_date=2019-07;,citation_cover_date=2019-07;,citation_year=2019;,citation_doi=10.1186/s13617-019-0085-5;,citation_volume=8;,citation_journal_title=Journal of Applied Volcanology;">
@@ -97,7 +94,7 @@ div.csl-indent {
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">3</span> Conclusion</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF (agu)</a></li><li><a href="index-meca.zip" data-meca-link="true"><i class="bi bi-archive"></i>MECA Bundle</a></li></ul></div><div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="index.qmd.html"><i class="bi bi-journal-code"></i>Article Notebook</a></li><li><a href="notebooks/data-screening.ipynb.html"><i class="bi bi-journal-code"></i>Data Screening</a></li></ul></div><div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://github.com/cwickham/manuscript-template-rstudio/"><i class="bi bi-github"></i>GitHub Repo</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF (agu)</a></li><li><a href="index-meca.zip" data-meca-link="true"><i class="bi bi-archive"></i>MECA Bundle</a></li></ul></div><div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="index.qmd.html"><i class="bi bi-journal-code"></i>Article Notebook</a></li><li><a href="notebooks/explore-earthquakes.qmd.html"><i class="bi bi-journal-code"></i>Explore Earthquakes</a></li></ul></div><div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://github.com/cwickham/manuscript-template-rstudio/"><i class="bi bi-github"></i>GitHub Repo</a></li></ul></div></nav>
 </div>
 <main class="content" id="quarto-document-content">
 
@@ -135,7 +132,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 27, 2023</p>
+      <p class="date">July 5, 2023</p>
     </div>
   </div>
   
@@ -226,17 +223,17 @@ p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
 </div>
 <p>La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands (<a href="#fig-map" class="quarto-xref">Figure&nbsp;2</a>).</p>
 <div class="quarto-embed-nb-cell">
-<div id="cell-fig-spatial-plot" class="cell" data-execution_count="14">
+<div id="cell-fig-spatial-plot" class="cell" data-message.hidden="true" data-warning.hidden="true">
 <div class="cell-output cell-output-display">
 <div id="fig-spatial-plot" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="index_files/figure-html/fig-spatial-plot-output-1.png" class="img-fluid figure-img" alt="A scatterplot of earthquake locations plotting latitude  against longitude."></p>
-<figcaption class="figure-caption">Figure&nbsp;3: Locations of earthquakes on La Palma since 2017.</figcaption>
+<p><img src="index_files/figure-html/fig-spatial-plot-output-1.png" class="img-fluid figure-img" alt="A scatterplot of earthquake locations plotting latitude against longitude."></p>
+<figcaption class="figure-caption">Figure&nbsp;3: Locations of earthquakes on La Palma since 2017</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<a class="quarto-notebook-link" id="nblink-2" href="notebooks/data-screening.ipynb.html#cell-fig-spatial-plot">Source: Data Screening</a></div>
+<a class="quarto-notebook-link" id="nblink-2" href="notebooks/explore-earthquakes.qmd.html#cell-fig-spatial-plot">Source: Explore Earthquakes</a></div>
 <p><a href="#fig-spatial-plot" class="quarto-xref">Figure&nbsp;3</a> shows the location of recent Earthquakes on La Palma.</p>
 </section>
 <section id="sec-data-methods" class="level2" data-number="2">
@@ -257,7 +254,7 @@ Marrero, José, Alicia García, Manuel Berrocoso, Ángeles Llinares, Antonio Rod
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{purves2023,
   author = {Purves, Steve and Cockett, Rowan},
   title = {La {Palma} {Earthquakes}},
-  date = {2023-06-27},
+  date = {2023-07-05},
   langid = {en},
   abstract = {In September 2021, a significant jump in seismic activity
     on the island of La Palma (Canary Islands, Spain) signaled the start
@@ -267,7 +264,7 @@ Marrero, José, Alicia García, Manuel Berrocoso, Ángeles Llinares, Antonio Rod
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-purves2023" class="csl-entry quarto-appendix-citeas" role="listitem">
 Purves, Steve, and Rowan Cockett. 2023. <span>“La Palma
-Earthquakes.”</span> Earth and Space Science. June 27, 2023.
+Earthquakes.”</span> Earth and Space Science. July 5, 2023.
 </div></div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
