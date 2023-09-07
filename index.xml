@@ -34,6 +34,7 @@ and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
 <given-names>Steve</given-names>
 </name>
 <string-name>Steve Purves</string-name>
+
 <email>steve@curvenote.com</email>
 <role vocab="https://credit.niso.org" vocab-term="investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
 <role vocab="https://credit.niso.org" vocab-term="project
@@ -51,6 +52,7 @@ administration</role>
 <given-names>Rowan</given-names>
 </name>
 <string-name>Rowan Cockett</string-name>
+
 <xref ref-type="aff" rid="aff-1">a</xref>
 </contrib>
 </contrib-group>
@@ -70,9 +72,9 @@ administration</role>
 <corresp id="cor-1">steve@curvenote.com</corresp>
 </author-notes>
 
-<pub-date date-type="pub" publication-format="electronic" iso-8601-date="2023-07-07">
+<pub-date date-type="pub" publication-format="electronic" iso-8601-date="2023-09-07">
 <year>2023</year>
-<month>7</month>
+<month>9</month>
 <day>7</day>
 </pub-date>
 
@@ -217,9 +219,6 @@ Nacional (IGN). …</p>
 <sec id="conclusion">
   <title>3 Conclusion</title>
 </sec>
-<sec id="references">
-  <title>References</title>
-</sec>
 </body>
 
 <back>
@@ -246,7 +245,7 @@ Nacional (IGN). …</p>
 </ref-list>
 </back>
 
-<sub-article article-type="notebook" id="nb-7-nb-article">
+<sub-article article-type="notebook" id="nb-8-nb-article">
 <front-stub>
 <title-group>
 <article-title>La Palma Earthquakes</article-title>
@@ -259,6 +258,7 @@ Nacional (IGN). …</p>
 <given-names>Steve</given-names>
 </name>
 <string-name>Steve Purves</string-name>
+
 <email>steve@curvenote.com</email>
 <role vocab="https://credit.niso.org" vocab-term="investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
 <role vocab="https://credit.niso.org" vocab-term="project
@@ -276,6 +276,7 @@ administration</role>
 <given-names>Rowan</given-names>
 </name>
 <string-name>Rowan Cockett</string-name>
+
 <xref ref-type="aff" rid="aff-1-nb-article">a</xref>
 </contrib>
 </contrib-group>
@@ -444,9 +445,6 @@ avg_years_between_eruptions</code>
 <sec id="conclusion-nb-article">
   <title>3 Conclusion</title>
 </sec>
-<sec id="references-nb-article">
-  <title>References</title>
-</sec>
 </body>
 
 
@@ -454,19 +452,30 @@ avg_years_between_eruptions</code>
 <back>
 <ref-list>
   <ref id="ref-marrero2019-nb-article">
-    <mixed-citation>Marrero, José, Alicia García, Manuel Berrocoso,
-    Ángeles Llinares, Antonio Rodríguez-Losada, and R. Ortiz. 2019.
-    “Strategies for the Development of Volcanic Hazard Maps in
-    Monogenetic Volcanic Fields: The Example of La Palma (Canary
-    Islands).” <italic>Journal of Applied Volcanology</italic> 8 (July).
-    <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1186/s13617-019-0085-5">https://doi.org/10.1186/s13617-019-0085-5</ext-link>.</mixed-citation>
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Marrero</surname><given-names>José</given-names></name>
+        <name><surname>García</surname><given-names>Alicia</given-names></name>
+        <name><surname>Berrocoso</surname><given-names>Manuel</given-names></name>
+        <name><surname>Llinares</surname><given-names>Ángeles</given-names></name>
+        <name><surname>Rodríguez-Losada</surname><given-names>Antonio</given-names></name>
+        <name><surname>Ortiz</surname><given-names>R.</given-names></name>
+      </person-group>
+      <article-title>Strategies for the development of volcanic hazard maps in monogenetic volcanic fields: The example of La Palma (Canary Islands)</article-title>
+      <source>Journal of Applied Volcanology</source>
+      <year iso-8601-date="2019-07">2019</year><month>07</month>
+      <volume>8</volume>
+      <pub-id pub-id-type="doi">10.1186/s13617-019-0085-5</pub-id>
+      <fpage></fpage>
+      <lpage></lpage>
+    </element-citation>
   </ref>
 </ref-list>
 </back>
 
 
 </sub-article>
-<sub-article article-type="notebook" id="nb-3-nb-1">
+<sub-article article-type="notebook" id="nb-4-nb-1">
 <front-stub>
 <title-group>
 <article-title>Explore Earthquakes</article-title>
@@ -478,13 +487,15 @@ avg_years_between_eruptions</code>
 <given-names>Charlotte</given-names>
 </name>
 <string-name>Charlotte Wickham</string-name>
+
 </contrib>
 </contrib-group>
 </front-stub>
 
 <body>
 <sec id="nb-code-cell-1-nb-1" specific-use="notebook-code">
-<code language="r script">library(tidyverse)</code>
+<code language="r script">library(tidyverse)
+</code>
 <sec id="nb-code-cell-1-output-0-nb-1" specific-use="notebook-output">
 <preformat>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.2     ✔ readr     2.1.4
@@ -500,7 +511,8 @@ avg_years_between_eruptions</code>
 </sec>
 <p>Read a clean version of data:</p>
 <sec id="nb-code-cell-2-nb-1" specific-use="notebook-code">
-<code language="r script">la_palma &lt;- read_csv(&quot;la-palma.csv&quot;)</code>
+<code language="r script">la_palma &lt;- read_csv(&quot;la-palma.csv&quot;)
+</code>
 <sec id="nb-code-cell-2-output-0-nb-1" specific-use="notebook-output">
 <preformat>Rows: 11347 Columns: 5
 ── Column specification ────────────────────────────────────────────────────────
@@ -513,15 +525,17 @@ dttm (1): DateTime
 </sec>
 </sec>
 <p>Create spatial plot:</p>
-<sec id="nb-code-cell-3-nb-1" specific-use="notebook-code">
-<code language="r script">la_palma |&gt; 
+<sec id="cell-fig-spatial-plot-nb-1" specific-use="notebook-code">
+<code language="r script">#|   against longitude.&quot;
+la_palma |&gt; 
   ggplot(aes(Longitude, Latitude)) +
   geom_point(aes(color = Magnitude, size = 40-`Depth(km)`)) +
   scale_color_viridis_c(direction = -1) + 
   scale_size(range = c(0.5, 2), guide = &quot;none&quot;) +
-  theme_bw()</code>
+  theme_bw()
+</code>
 <fig id="fig-spatial-plot-nb-1">
-  <caption><p>Figure 1: Locations of earthquakes on La Palma since
+  <caption><p>Locations of earthquakes on La Palma since
   2017</p></caption>
   <graphic mimetype="image" mime-subtype="png" xlink:href="explore-earthquakes_files/figure-jats/fig-spatial-plot-1.png" />
 </fig>
